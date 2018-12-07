@@ -1,0 +1,285 @@
+body {
+    font-family: 'Ink Free', arvo;
+    text-align: left;
+    font-size: large;
+    color: #493829;
+    background-color: #9cc0e0;
+    background-image: url(Images/background.gif);
+    background-repeat: repeat-x;
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation Menu */
+
+h1.name {
+    background-color: #404F24;
+    background-image: url(Images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20%;
+    color: white;
+    font-size: 50px;
+    text-shadow: 1px 3px 5px #DBCA69;
+    text-align: center;
+}
+
+
+/* Phone */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #4E6172;
+        padding: .5rem 2%;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: .2rem .1rem;
+        margin: .5rem;
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li.active a {
+        color: #DBCA69;
+    }
+    nav ul li a:hover {
+        color: #D57500;
+    }
+    /* iframes */
+    .mapiframe {
+        width: 95%;
+        height: 75%;
+        margin: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .movieiframe {
+        width: 75%;
+        height: 20rem;
+        border: none;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+
+/* Desktop, Phone, and Navigation */
+
+@media only screen and (min-width: 601px) {
+    nav ul {
+        text-align: center;
+        width: 100%;
+        background-color: #404F24;
+        font-size: x-large;
+        transition: max-height 0.2s ease-out;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #4E6172;
+    }
+    /* iframes */
+    .mapiframe {
+        width: 75%;
+        height: 500px;
+        float: right;
+        margin: 45px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .movieiframe {
+        width: 60%;
+        height: 20rem;
+        float: right;
+        border: none;
+        margin: 45px 10px 10px 10px;
+    }
+}
+
+
+/* Figure CSS */
+
+figure.redrock {
+    float: right;
+    margin: 0 2% 0 2%;
+    border: 1px solid #4E6172;
+    padding: 3px;
+}
+
+figure.redrock img {
+    width: 100%;
+    box-shadow: 3px 3px 10px rgb(37, 36, 36);
+}
+
+figure.redrock figcaption {
+    text-align: center;
+}
+
+.logo {
+    width: 13%;
+    float: right;
+}
+
+figure.gallery {
+    float: left;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid #4E6172;
+    margin: 2%;
+    font-size: large;
+}
+
+
+/* Form */
+
+form.subscribeForm fieldset {
+    border: 1px solid #404F24;
+    border-radius: 1rem;
+    padding: 0 0 2% 2%;
+}
+
+form.subscribeForm legend {
+    font-size: x-large;
+    color: #D57500;
+}
+
+form.subscribeForm label {
+    display: block;
+}
+
+form.subscribeForm span {
+    display: block;
+    padding-top: 1%;
+    color: #493829;
+}
+
+form.subscribeForm .info {
+    border-radius: 1rem;
+    background-color: #4E6172;
+    color: #D57500;
+    padding: .3rem;
+    width: 33%;
+}
+
+form.subscribeForm .mySubmit {
+    background-color: #D57500;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: #493829;
+    margin-bottom: 1rem;
+}
+
+form.subscribeForm .suggest {
+    border-radius: 1rem;
+    background-color: #4E6172;
+    color: #D57500;
+    padding: .3rem;
+    width: 33%;
+}
+
+
+/* Other */
+
+div.keepOpen {
+    clear: both;
+}
+
+main {
+    padding-left: 20px;
+    background: linear-gradient(to right, #b7e685 40%, #aad0f3);
+}
+
+main h2 {
+    border-bottom: #668D3C solid;
+    margin-bottom: 10px;
+}
+
+main p {
+    padding: 10px;
+    line-height: 125%;
+}
+
+main blockquote {
+    font-style: italic;
+    font-size: medium;
+    margin: .4em 2%;
+}
+
+.discover {
+    padding-left: 10px;
+}
+
+.homeButtons {
+    color: #404F24;
+}
+
+.companies {
+    padding-left: 30px;
+}
+
+main ol.companies li {
+    padding-left: 15px;
+    font-size: medium;
+    list-style-image: url(Images/bd.png);
+    margin: 3px;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+
+main ul.senders li {
+    padding-left: 30px;
+    background-image: url(Images/bd.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    margin: 3px;
+}
+
+
+/* Table */
+
+table.schedule th {
+    text-align: left;
+    background-color: #aad0f3;
+    font-size: large;
+}
+
+table.schedule {
+    border-collapse: collapse;
+    text-align: left;
+    border: 1px solid black;
+    font-size: medium;
+    margin: 0 1% 1rem 1%;
+}
+
+table.schedule tr:nth-child(even) {
+    background-color: white;
+}
+
+table.schedule tr:hover {
+    background-color: gray;
+}
+
+footer {
+    padding: 8px;
+    background: gray;
+    color: white;
+    line-height: 50px;
+}
+
+footer a {
+    color: white;
+}
